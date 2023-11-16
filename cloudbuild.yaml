@@ -1,0 +1,9 @@
+steps:
+  # Build the NodeJS web app.
+  # Build a Docker image for the Spring Boot application.
+ - name: 'gcr.io/cloud-builders/docker'
+   args: [ 'build', '-t', 'europe-west2-docker.pkg.dev/${PROJECT_ID}/fineract/fineract-web-app:latest', '.' ]
+
+  #Push the Docker image to the Google Cloud Container Registry.
+ - name: 'gcr.io/cloud-builders/docker'
+   args: [ 'push', 'europe-west2-docker.pkg.dev/${PROJECT_ID}/fineract/fineract-web-app:latest' ]
