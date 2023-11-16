@@ -40,9 +40,9 @@ FROM $NGINX_IMAGE
 
 COPY --from=builder /dist /usr/share/nginx/html
 
-EXPOSE 8080
+EXPOSE 80
 
-RUN sed -i 's/listen 80;/listen 8080;/g' nginx.conf
+#RUN sed -i 's/listen 80;/listen 8080;/g' nginx.conf
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
