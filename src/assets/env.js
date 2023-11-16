@@ -2,14 +2,14 @@
   window["env"] = window["env"] || {};
 
   // BackEnd Environment variables
-  window["env"]["fineractApiUrls"] = '';
-  window["env"]["fineractApiUrl"]  = '';
+  window["env"]["fineractApiUrls"] = 'https://fineract-404214.nw.r.appspot.com';
+  window["env"]["fineractApiUrl"]  = 'https://fineract-404214.nw.r.appspot.com';
 
   window["env"]["apiProvider"] = '';
   window["env"]["apiVersion"]  = '';
 
-  window["env"]["fineractPlatformTenantId"]  = '';
-  window["env"]["fineractPlatformTenantIds"]  = '';
+  window["env"]["fineractPlatformTenantId"]  = 'default';
+  window["env"]["fineractPlatformTenantIds"]  = 'default';
 
   // Language Environment variables
   window["env"]["defaultLanguage"] = '';
